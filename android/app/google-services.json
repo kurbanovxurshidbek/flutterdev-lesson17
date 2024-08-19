@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413593276008",
+    "project_id": "ngdemo15",
+    "storage_bucket": "ngdemo15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413593276008:android:0a5d6bb964adba551435dd",
+        "android_client_info": {
+          "package_name": "com.nextgen.ngdemo15"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoU-ghEt8OA6w07N2zwSYFfb8G7DMPoZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
