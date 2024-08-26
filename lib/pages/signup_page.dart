@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ngdemo15/pages/signin_page.dart';
 import 'package:ngdemo15/services/auth_service.dart';
 
+import '../services/prefs_service.dart';
 import '../services/utils_service.dart';
 import 'home_page.dart';
 
@@ -36,12 +37,14 @@ class _SignUpPageState extends State<SignUpPage> {
     });
   }
 
-  _getFirebaseUser(User? firebaseUser){
+  _getFirebaseUser(User? firebaseUser) async{
     setState(() {
       isLoading = false;
     });
 
     if(firebaseUser != null){
+      // Save userId into Shared Preference
+      await Prefs.saveUserId(firebaseUser.uid);
       _callHomePage();
     }else{
       Utils.fireToast("Check your information");

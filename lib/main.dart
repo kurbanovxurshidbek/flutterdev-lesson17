@@ -14,7 +14,7 @@ void main() async {
       apiKey: 'AIzaSyDoU-ghEt8OA6w07N2zwSYFfb8G7DMPoZQ',
       appId: '1:413593276008:android:0a5d6bb964adba551435dd',
       messagingSenderId: '413593276008',
-      projectId: '413593276008',
+      projectId: 'ngdemo15',
     ),
   );
 

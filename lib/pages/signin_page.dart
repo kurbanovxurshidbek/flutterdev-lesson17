@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ngdemo15/pages/signup_page.dart';
 
 import '../services/auth_service.dart';
+import '../services/prefs_service.dart';
 import '../services/utils_service.dart';
 import 'home_page.dart';
 
@@ -38,7 +39,7 @@ class _SignInPageState extends State<SignInPage> {
       isLoading = false;
     });
     if (firebaseUser != null) {
-      //await Prefs.saveUserId(firebaseUser.uid);
+      await Prefs.saveUserId(firebaseUser.uid);
       _callHomePage();
     } else {
       Utils.fireToast("Check your email or password");
